@@ -10,5 +10,4 @@ Enter C for Circle or T for Triangle: """)
 if option == "C":
   radius = float(raw_input("Enter radius: "))
   area = 3.14159 * radius**2
-  print (area)
- 
+  print ("The area for the Triangle with radius %s is area %s") %(radius, area) 
