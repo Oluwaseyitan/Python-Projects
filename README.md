@@ -47,3 +47,25 @@ def rental_car_cost(days):
 def trip_cost(city, days, spending_money):
   return rental_car_cost(days) + hotel_cost(days-1) + plane_ride_cost(city)+ spending_money
 print trip_cost("Los Angeles",5,600)
+
+
+NUMBER GUESS:
+
+"""In this program we would be doing a number guess"""
+
+from random import randint 
+from time import sleep
+def get_user_guess():
+  guess= int(raw_input("Enter your guess: "))
+
+def roll_dice(number_of_sides):
+  first_roll = randint(1, number_of_sides)
+  second_roll = randint(1, number_of_sides)
+  max_val = number_of_sides *2
+  print ("""The Maximum value possible is %d""")% max_val
+  
+guess= get_user_guess()
+if guess > max_val:
+  print ("Entry is invalid")
+  
+roll_dice(6)
